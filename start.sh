@@ -1,0 +1,1 @@
+/home/ad/.nvm/v0.10.38/bin/node /home/ad/MYapp3/mon6.js >> /home/ad/MYapp3/mon6.log

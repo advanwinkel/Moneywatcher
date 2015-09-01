@@ -1,0 +1,415 @@
+{
+    "page": {
+        "type": "page",
+        "name": "Renteblad",
+        "id": "P449",
+        "engine-version": "9.2.4.0",
+        "language": "nl-NL-MoneYou",
+        "application": {
+            "name": "export-MoneYou_Hypotheken",
+            "version": "0.0-r7_2",
+            "label": "r7_2"
+        },
+        "params": {},
+        "content": [
+            {
+                "type": "container",
+                "name": "Renteblad",
+                "id": "P449-C0",
+                "content": [
+                    {
+                        "type": "container",
+                        "name": "RenteBlad_Lening",
+                        "id": "P449-C0-C0",
+                        "content": [
+                            {
+                                "type": "field",
+                                "name": "Lening.BestaandeKlantJaNee",
+                                "id": "P449-C0-C0-F0",
+                                "datatype": "text",
+                                "presentationStyles": [
+                                    "LangeVraagTekst"
+                                ],
+                                "format": "LangeVraagTekst",
+                                "value": "Nee",
+                                "display": "Nee",
+                                "refresh": true,
+                                "question": "Heb je al een MoneYou hypotheek?",
+                                "domain": [
+                                    {
+                                        "value": "Ja",
+                                        "display": "Ja",
+                                        "valid": true
+                                    },
+                                    {
+                                        "value": "Nee",
+                                        "display": "Nee",
+                                        "valid": true
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "field",
+                                "name": "Lening.Code",
+                                "id": "P449-C0-C0-F1",
+                                "datatype": "text",
+                                "presentationStyles": [
+                                    "DropdownZonderUnknown"
+                                ],
+                                "format": "DropdownZonderUnknown",
+                                "value": "MY018",
+                                "display": "MoneYou Internet Hypotheek - 2 maanden",
+                                "refresh": true,
+                                "question": " Kies je hypotheek",
+                                "explain": "",
+                                "domain": [
+                                    {
+                                        "value": "MY008",
+                                        "display": "MoneYou Easy - 2 (0% afsluitprovisie)",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY009",
+                                        "display": "MoneYou Easy - 4 (0% afsluitprovisie)",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY010",
+                                        "display": "MoneYou Easy - 2 (0% afsluitprovisie)",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY011",
+                                        "display": "MoneYou Easy - 4 (0% afsluitprovisie)",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY012",
+                                        "display": "MoneYou Easy - 2",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY013",
+                                        "display": "MoneYou Easy - 4",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY016",
+                                        "display": "MoneYou InternetPlus Hypotheek - 2 maanden",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY017",
+                                        "display": "MoneYou InternetPlus Hypotheek - 4 maanden",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY018",
+                                        "display": "MoneYou Internet Hypotheek - 2 maanden",
+                                        "valid": true
+                                    },
+                                    {
+                                        "value": "MY019",
+                                        "display": "MoneYou Internet Hypotheek - 4 maanden",
+                                        "valid": true
+                                    },
+                                    {
+                                        "value": "MY020",
+                                        "display": "MoneYou Plus Hypotheek - 2 maanden",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY021",
+                                        "display": "MoneYou Plus Hypotheek - 4 maanden",
+                                        "valid": false
+                                    },
+                                    {
+                                        "value": "MY001",
+                                        "display": "MoneYou Overig",
+                                        "valid": false
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "text",
+                                "name": "RenteTabelHeaderTekst",
+                                "id": "P449-C0-C0-T2",
+                                "display": "Klik op een rente in de tabel voor een voorbeeldberekening.<br/><br/>",
+                                "contenttype": "Text"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "container",
+                        "name": "RenteTabelContainer",
+                        "id": "P449-C0-C1",
+                        "presentationStyles": [
+                            "Rentetabel"
+                        ],
+                        "format": "Rentetabel",
+                        "content": [
+                            {
+                                "type": "container",
+                                "name": "RenteBladDummyAttributen",
+                                "id": "P449-C0-C1-C0",
+                                "content": [
+                                    {
+                                        "type": "field",
+                                        "name": "Lening.Nhg",
+                                        "id": "P449-C0-C1-C0-F0",
+                                        "datatype": "text",
+                                        "value": "Nee",
+                                        "display": "Nee",
+                                        "question": "Nationale Hypoheek Garantie (NHG)",
+                                        "explain": "Bedraagt de aankoopprijs van je woning inclusief bijkomende kosten niet meer dan €265.000,- ? Of wil je je hypotheek oversluiten en is je huidige hypotheek €265.000,- of minder? Dan kun in aanmerking komen voor NHG. Wij controleren of je aanvraag voldoet aan de voorwaarde van NHG. <br/>Voordelen van de Nationale Hypotheek Garantie:<ul><li>je betaalt een lagere rente</li><li>de hypotheekschuld kan worden kwijtgescholden als je buiten je schuld je maandbedrag niet meer kunt betalen.</li></ul><br/>Wil je weten of je in aanmerking voor NHG? Stuur alle documenten mee waar in de offerte om gevraagd wordt. Hiermee controleren we of je een hypotheek met Nationale Hypotheek Garantie (NHG) kunt afsluiten. Meer weten over NHG? Ga naar www.nhg.nl.",
+                                        "domain": [
+                                            {
+                                                "value": "Ja",
+                                                "display": "Ja",
+                                                "valid": true
+                                            },
+                                            {
+                                                "value": "Nee",
+                                                "display": "Nee",
+                                                "valid": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "field",
+                                        "name": "Lening.LtvCategorie",
+                                        "id": "P449-C0-C1-C0-F1",
+                                        "datatype": "text",
+                                        "value": "1",
+                                        "display": "<= 55",
+                                        "domain": [
+                                            {
+                                                "value": "nhg",
+                                                "display": "NHG",
+                                                "valid": true
+                                            },
+                                            {
+                                                "value": "1",
+                                                "display": "<= 55",
+                                                "valid": true
+                                            },
+                                            {
+                                                "value": "2",
+                                                "display": "> 55 en <= 65",
+                                                "valid": true
+                                            },
+                                            {
+                                                "value": "3",
+                                                "display": "> 65 en <= 85",
+                                                "valid": true
+                                            },
+                                            {
+                                                "value": "4",
+                                                "display": "> 85 en <= 110",
+                                                "valid": true
+                                            },
+                                            {
+                                                "value": "5",
+                                                "display": "> 110",
+                                                "valid": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "instance_iterator",
+                                        "name": "RenteBlad_LeningLeningdelen",
+                                        "id": "P449-C0-C1-C0-C2",
+                                        "content": [
+                                            {
+                                                "type": "instance",
+                                                "name": "instance-0",
+                                                "id": "P449-C0-C1-C0-C2-C0",
+                                                "content": [
+                                                    {
+                                                        "type": "container",
+                                                        "name": "RekenvoorbeeldGekozenPercentage",
+                                                        "id": "P449-C0-C1-C0-C2-C0-C0",
+                                                        "content": [
+                                                            {
+                                                                "type": "field",
+                                                                "name": "Rekenvoorbeeld.GeselecteerdRentepercentage",
+                                                                "id": "P449-C0-C1-C0-C2-C0-C0-F0",
+                                                                "datatype": "percentage",
+                                                                "value": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "RenteBlad_DummyKlikRente",
+                                        "id": "P449-C0-C1-C0-B3",
+                                        "display": " ",
+                                        "actions": [
+                                            "_KiesRente"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rentetabel",
+                                "columnnames": [
+                                    "Rentevast",
+                                    "NHG",
+                                    "t/m 55%",
+                                    "t/m 65%",
+                                    "t/m 85%"
+                                ],
+                                "rows": [
+                                    [
+                                        "Variabel",
+                                        "MY_variabel",
+                                        [
+                                            0,
+                                            2.7
+                                        ],
+                                        [
+                                            1,
+                                            2.6
+                                        ],
+                                        [
+                                            2,
+                                            2.6
+                                        ],
+                                        [
+                                            3,
+                                            2.8
+                                        ]
+                                    ],
+                                    [
+                                        "Vast 1 jaar",
+                                        "MY_vast1jaar",
+                                        [
+                                            0,
+                                            2.5
+                                        ],
+                                        [
+                                            1,
+                                            2.4
+                                        ],
+                                        [
+                                            2,
+                                            2.4
+                                        ],
+                                        [
+                                            3,
+                                            2.6
+                                        ]
+                                    ],
+                                    [
+                                        "Vast 5 jaar",
+                                        "MY_vast5jaar",
+                                        [
+                                            0,
+                                            2.75
+                                        ],
+                                        [
+                                            1,
+                                            2.65
+                                        ],
+                                        [
+                                            2,
+                                            2.65
+                                        ],
+                                        [
+                                            3,
+                                            2.85
+                                        ]
+                                    ],
+                                    [
+                                        "Vast 10 jaar",
+                                        "MY_vast10jaar",
+                                        [
+                                            0,
+                                            3.35
+                                        ],
+                                        [
+                                            1,
+                                            3.25
+                                        ],
+                                        [
+                                            2,
+                                            3.25
+                                        ],
+                                        [
+                                            3,
+                                            3.45
+                                        ]
+                                    ],
+                                    [
+                                        "Vast 15 jaar",
+                                        "MY_vast15jaar",
+                                        [
+                                            0,
+                                            4.65
+                                        ],
+                                        [
+                                            1,
+                                            4.55
+                                        ],
+                                        [
+                                            2,
+                                            4.55
+                                        ],
+                                        [
+                                            3,
+                                            4.75
+                                        ]
+                                    ],
+                                    [
+                                        "Vast 20 jaar",
+                                        "MY_vast20jaar",
+                                        [
+                                            0,
+                                            4.75
+                                        ],
+                                        [
+                                            1,
+                                            4.65
+                                        ],
+                                        [
+                                            2,
+                                            4.65
+                                        ],
+                                        [
+                                            3,
+                                            4.85
+                                        ]
+                                    ],
+                                    [
+                                        "Vast 30 jaar",
+                                        "MY_vast30jaar",
+                                        [
+                                            0,
+                                            5.3
+                                        ],
+                                        [
+                                            1,
+                                            5.2
+                                        ],
+                                        [
+                                            2,
+                                            5.2
+                                        ],
+                                        [
+                                            3,
+                                            5.4
+                                        ]
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
